@@ -220,6 +220,18 @@
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+        .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* adjust if needed */
+    gap: 16px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;          /* pick a fixed height */
+    object-fit: cover;      /* crops image nicely */
+    border-radius: 8px;     /* optional */
+}
 
         #cta button:hover {
             transform: scale(1.1);
@@ -293,20 +305,20 @@
     <section id="community">
         <h2>Our Community Elon Air It!</h2>
         <p>Check out our amazing community in action—join the Elon Air tribe!</p>
-        <div class="video-gallery">
-            <div>
-                <img src="/1.png" alt="Replacement image" style="width: 100%; height: auto;">
-                <p>Fans Showing Off Elon Air Tattoos</p>
-            </div>
-            <div>
-                <img src="/2.png" alt="Replacement image" style="width: 100%; height: auto;">
-                <p>Elon Air Community Meetup Highlights</p>
-            </div>
-            <div>
-                <img src="/3.png" alt="Replacement image" style="width: 100%; height: auto;">
-                <p>Elon Air Memes</p>
-            </div>
-        </div>
+     <div class="video-gallery">
+    <div class="gallery-item">
+        <img src="/1.png" alt="Replacement image">
+        <p>Fans Showing Off Elon Air Tattoos</p>
+    </div>
+    <div class="gallery-item">
+        <img src="/2.png" alt="Replacement image">
+        <p>Elon Air Community Meetup Highlights</p>
+    </div>
+    <div class="gallery-item">
+        <img src="/3.png" alt="Replacement image">
+        <p>Elon Air Memes</p>
+    </div>
+</div>
     </section>
 
     <!-- Tokenomics Section -->
